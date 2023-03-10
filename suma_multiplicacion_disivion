@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int a,b,r,c;
+    int a,b,r;
     cout<<"Ingresar valor: ";
     cin>>a;
     cout<<"Ingresar valor: ";
