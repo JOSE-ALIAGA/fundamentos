@@ -1,0 +1,56 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    float prom;
+    cout<<"ingresar el primer numero: ";
+    cin>>a;
+    cout<<"ingresar el segundo numero: ";
+    cin>>b;
+    cout<<"ingresar el tercer numero: ";
+    cin>>c;
+    if (a<=10 && a>0)
+    {
+         if (b<=10 && b>0)
+         {
+             if (c<=10 && c>0)
+             {
+                  prom=(a+b+c)/3;
+                  cout<<"El promedio es: "<<prom<<endl;
+             }
+            else
+            {
+               cout<<"Error, el tercer numero no esta en el rango"<<endl;
+            }
+         }
+        else 
+        {
+           if (c>10 || c<0)
+              cout<<"Error, el valor del segundo y tercer numero no estan en el rango "<<endl;
+           else
+             cout<<"Error, el valor de segundo numero no esta en el rango"<<endl;
+        }
+    }
+    else
+    {
+         if (b>10 || b<0) 
+         {
+            if  (c>10 || c<0)
+                 cout<<"Error, el valor de los tres numeros no entran en el rango"<<endl;
+            else
+              cout<<"Error, el valor del primer y segundo numero no entran en el rango"<<endl;
+         }
+         else
+         {
+            if  (c>10 || c<0)
+                  cout<<"Error, el valor del primer y tercer numero no estan en el rango"<<endl;
+            else
+                 cout<<"Error, el valor del primer numero no esta en el rango"<<endl;
+         }
+    }
+    return 0;
+}
