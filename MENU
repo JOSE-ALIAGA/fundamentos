@@ -1,0 +1,70 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int opcion;
+    cout<<"MENU"<<endl;
+    cout<<"1.Calcular el precio a pagar"<<endl;
+    cout<<"2.Calcular solucion unica"<<endl;
+    cout<<"3.Calcular presupuesto"<<endl;
+    cout<<"Ingresar opcion: ";
+    cin>>opcion;
+    if (opcion==1)
+    {
+        int cantidad;
+        float precio, total;
+        cout<<"Ingresar la cantidad de camisas: ";
+        cin>>cantidad;
+        cout<<"Ingresar el precio de camisas: ";
+        cin>>precio;
+        if (cantidad >=3)
+            total=(cantidad*precio)*0.8;
+        else
+            total=(cantidad*precio)*0.9;
+        cout<<"El total a pagar es: "<<total;
+    }
+    else
+        if (opcion==2)
+        {
+            float a,b,c,d,x;
+            cout<<"Ingresar el valor de a: ";
+            cin>>a;
+            cout<<"Ingresar el valor de b: ";
+            cin>>b;
+            cout<<"Ingresar el valor de c: ";
+            cin>>c;
+            d=b*b-4*a*c;
+            if (a==0)
+                cout<<"No hay solución";
+            else
+            {
+                if (d==0)
+                {
+                    x=-b/(2*a);
+                    cout<<"La solucion unica es "<<x;
+                }
+                else
+                    cout<<"No existe solucion unica";
+            }
+        }
+        else
+            if (opcion==3)
+            {
+                float presupuesto, gin, trau, ped;
+                cout<<"ingresar presupuesto anual del hospital: ";
+                cin>>presupuesto;
+                gin=presupuesto*0.4;
+                trau=presupuesto*0.3;
+                ped=presupuesto*0.3;
+                cout<<"El presupuesto para el area de ginecologia es "<<gin<<endl;
+                cout<<"El presupuesto para el area de traumatologia es "<<trau<<endl;
+                cout<<"El presupuesto para el area de pediatria es "<<ped<<endl;
+            }
+            else
+                cout<<"Error";
+    
+    
+    return 0;
+}
