@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    int opcion;
+    int opcion, cantidad;
+    float presupuesto, gin, trau, ped,precio, total,a,b,c,d,x;
     cout<<"MENU"<<endl;
     cout<<"1.Calcular el precio a pagar"<<endl;
     cout<<"2.Calcular solucion unica"<<endl;
@@ -13,8 +14,6 @@ int main()
     cin>>opcion;
     if (opcion==1)
     {
-        int cantidad;
-        float precio, total;
         cout<<"Ingresar la cantidad de camisas: ";
         cin>>cantidad;
         cout<<"Ingresar el precio de camisas: ";
@@ -28,7 +27,6 @@ int main()
     else
         if (opcion==2)
         {
-            float a,b,c,d,x;
             cout<<"Ingresar el valor de a: ";
             cin>>a;
             cout<<"Ingresar el valor de b: ";
@@ -52,7 +50,6 @@ int main()
         else
             if (opcion==3)
             {
-                float presupuesto, gin, trau, ped;
                 cout<<"ingresar presupuesto anual del hospital: ";
                 cin>>presupuesto;
                 gin=presupuesto*0.4;
