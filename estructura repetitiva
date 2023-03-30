@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,n;
+    i=0;
+    cout<<"Ingresar la cantidad de veces a repetir: ";
+    cin>>n;
+    cout<<"Salida del mientras"<<endl;
+    while (i<n)
+    {
+        i++;
+        cout<<i<<endl;
+    }
+    cout<<"Salida del for"<<endl;
+    for (int i=1;i<=n;i++)
+        cout<<i<<endl;
+    cout<<"Salida del repetir hasta"<<endl;
+    i=0;
+    do
+    {
+        i++;
+        cout<<i<<endl;
+    } while (i<n);
+    return 0;
+}
